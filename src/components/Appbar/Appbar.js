@@ -4,7 +4,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 
 import AppBar from "@material-ui/core/AppBar";
 
-import classNames from "classnames";
 import { Link } from "react-router-dom";
 import { Container } from "@material-ui/core";
 

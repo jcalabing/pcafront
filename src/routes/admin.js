@@ -43,6 +43,13 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
+    path: "/province",
+    name: "Provinces",
+    icon: TerrainIcon,
+    component: Province,
+    layout: "/admin",
+  },
+  {
     path: "/user",
     name: "User Profile",
     icon: Person,
@@ -52,16 +59,9 @@ const dashboardRoutes = [
   },
   {
     path: "/table",
-    name: "Forms",
+    name: "Entries",
     icon: "content_paste",
     component: TableList,
-    layout: "/admin",
-  },
-  {
-    path: "/typography",
-    name: "Announcements",
-    icon: TextsmsIcon,
-    component: Typography,
     layout: "/admin",
   },
   {
@@ -69,20 +69,6 @@ const dashboardRoutes = [
     name: "Reports",
     icon: AssessmentIcon,
     component: Icons,
-    layout: "/admin",
-  },
-  {
-    path: "/province",
-    name: "Provinces",
-    icon: TerrainIcon,
-    component: Province,
-    layout: "/admin",
-  },
-  {
-    path: "/notifications",
-    name: "Members",
-    icon: PeopleAltIcon,
-    component: NotificationsPage,
     layout: "/admin",
   },
 ];
