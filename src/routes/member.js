@@ -22,7 +22,7 @@ import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import BubbleChart from "@material-ui/icons/BubbleChart";
 import Notifications from "@material-ui/icons/Notifications";
 // core components/views for Admin layout
-import DashboardPage from "views/Dashboard/Dashboard.js";
+import DashboardPage from "views/Admin/Dashboard";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";
 import Typography from "views/Typography/Typography.js";
@@ -37,7 +37,7 @@ const dashboardRoutes = [
     rtlName: "لوحة القيادة",
     icon: Dashboard,
     component: DashboardPage,
-    layout: "/member"
+    layout: "/member",
   },
   {
     path: "/user",
@@ -45,7 +45,7 @@ const dashboardRoutes = [
     rtlName: "ملف تعريفي للمستخدم",
     icon: Person,
     component: UserProfile,
-    layout: "/member"
+    layout: "/member",
   },
   {
     path: "/table",
@@ -53,7 +53,7 @@ const dashboardRoutes = [
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,
-    layout: "/member"
+    layout: "/member",
   },
   {
     path: "/typography",
@@ -61,7 +61,7 @@ const dashboardRoutes = [
     rtlName: "طباعة",
     icon: LibraryBooks,
     component: Typography,
-    layout: "/member"
+    layout: "/member",
   },
   {
     path: "/icons",
@@ -69,7 +69,7 @@ const dashboardRoutes = [
     rtlName: "الرموز",
     icon: BubbleChart,
     component: Icons,
-    layout: "/member"
+    layout: "/member",
   },
   {
     path: "/notifications",
@@ -77,10 +77,8 @@ const dashboardRoutes = [
     rtlName: "إخطارات",
     icon: Notifications,
     component: NotificationsPage,
-    layout: "/member"
+    layout: "/member",
   },
-
-
 ];
 
 export default dashboardRoutes;

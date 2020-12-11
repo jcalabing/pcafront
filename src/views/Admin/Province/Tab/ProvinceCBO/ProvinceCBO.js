@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Table from "components/Table/Table.js";
 import ActionButton from "components/ActionButton";
 
 import AddCircleRoundedIcon from "@material-ui/icons/AddCircleRounded";
 
+import Popup from "components/Popup";
+import ProvCBOBox from "lightbox/ProvCBOBox";
+
 export default function ProvinceCBO(props) {
+  const [openPopUp, setOpenPopUp] = useState(false);
   return (
     <>
       <div>
@@ -12,6 +16,9 @@ export default function ProvinceCBO(props) {
           variant="outlined"
           color="info"
           startIcon={<AddCircleRoundedIcon />}
+          onClick={() => {
+            setOpenPopUp(true);
+          }}
         >
           Add New
         </ActionButton>
@@ -96,6 +103,14 @@ export default function ProvinceCBO(props) {
           ["Grace D. Acaño", "Libas SCFO", "Libas, Banga, Aklan", 28],
         ]}
       />
+      <Popup
+        title="Add New Provincial CBO"
+        openPopup={openPopUp}
+        setOpenPopup={setOpenPopUp}
+        fullWidth="true"
+      >
+        <ProvCBOBox></ProvCBOBox>
+      </Popup>
     </>
   );
 }

@@ -13,8 +13,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 
 import AddCircleRoundedIcon from "@material-ui/icons/AddCircleRounded";
 
-import EditIcon from "@material-ui/icons/Edit";
-
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
 import CustomButtons from "components/CustomButtons/Button.js";
 import Popup from "components/Popup";
@@ -24,10 +22,7 @@ import InfoIcon from "@material-ui/icons/Info";
 
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
 
-import Typography from "@material-ui/core/Typography";
-import UserProfile from "views/UserProfile/UserProfile";
 import ProvinceBox from "lightbox/ProvinceBox/ProvinceBox";
-import ActionButton from "components/ActionButton/ActionButton";
 import ProvinceInfo from "./Tab/ProvinceInfo/ProvinceInfo";
 import ProvinceCBO from "./Tab/ProvinceCBO/ProvinceCBO";
 import ProvinceAdmin from "./Tab/ProvinceAdmin/ProvinceAdmin";
@@ -155,7 +150,6 @@ export default function Provinces() {
       >
         <ProvinceBox></ProvinceBox>
       </Popup>
-      <Popup></Popup>
     </>
   );
 }

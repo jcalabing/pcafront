@@ -34,6 +34,7 @@ export default function ProvinceBox() {
           />
         </GridItem>
       </GridContainer>
+      <br />
       <Button color="success" startIcon={<SaveIcon />}>
         Save
       </Button>

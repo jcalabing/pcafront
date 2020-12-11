@@ -1,37 +1,20 @@
-/*!
-
-=========================================================
-* Material Dashboard React - v1.9.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-// @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
 import TerrainIcon from "@material-ui/icons/Terrain";
 import AssessmentIcon from "@material-ui/icons/Assessment";
 import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 import TextsmsIcon from "@material-ui/icons/Textsms";
+import AssignmentIcon from "@material-ui/icons/Assignment";
 // import Unarchive from "@material-ui/icons/Unarchive";
 // core components/views for Admin layout
-import DashboardPage from "views/Dashboard/Dashboard.js";
+import DashboardPage from "views/Admin/Dashboard";
 import UserProfile from "views/UserProfile/UserProfile.js";
-import TableList from "views/TableList/TableList.js";
-import Typography from "views/Typography/Typography.js";
 import Icons from "views/Icons/Icons.js";
-import NotificationsPage from "views/Notifications/Notifications.js";
-import Province from "views/Province";
+import Province from "views/Admin/Province";
 // import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
+import Entries from "views/Admin/Entries";
+import Kaanib from "views/Admin/Kaanib";
+
 // core components/views for RTL layout
 
 const dashboardRoutes = [
@@ -58,10 +41,18 @@ const dashboardRoutes = [
     hide: true,
   },
   {
-    path: "/table",
-    name: "Entries",
+    path: "/kaanib",
+    name: "KAANIB",
+    icon: AssignmentIcon,
+    component: Kaanib,
+    layout: "/admin",
+    collapse: true,
+  },
+  {
+    path: "/entries",
+    name: "CHP",
     icon: "content_paste",
-    component: TableList,
+    component: Entries,
     layout: "/admin",
   },
   {

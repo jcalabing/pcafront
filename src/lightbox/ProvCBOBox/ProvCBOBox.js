@@ -30,7 +30,7 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function ProvAdminBox() {
+export default function ProvCBOBox() {
   const classes = useStyles();
   return (
     <div>
@@ -39,8 +39,8 @@ export default function ProvAdminBox() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <CustomInput
-                labelText="Username"
-                id="username"
+                labelText="CBO Name"
+                id="cboname"
                 formControlProps={{
                   fullWidth: true,
                 }}
@@ -48,8 +48,8 @@ export default function ProvAdminBox() {
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <CustomInput
-                labelText="Email address"
-                id="email-address"
+                labelText="CDO/Agriculturist"
+                id="cdoagriculturist"
                 formControlProps={{
                   fullWidth: true,
                 }}
@@ -59,8 +59,8 @@ export default function ProvAdminBox() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <CustomInput
-                labelText="First Name"
-                id="first-name"
+                labelText="CBO Location"
+                id="cbolocation"
                 formControlProps={{
                   fullWidth: true,
                 }}
@@ -68,7 +68,7 @@ export default function ProvAdminBox() {
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <CustomInput
-                labelText="Last Name"
+                labelText="No. of Farmers/Benificiaries"
                 id="last-name"
                 formControlProps={{
                   fullWidth: true,
@@ -79,17 +79,19 @@ export default function ProvAdminBox() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <CustomInput
-                labelText="Address"
-                id="address"
+                labelText="Registration"
+                id="registration"
                 formControlProps={{
                   fullWidth: true,
                 }}
               />
             </GridItem>
+          </GridContainer>
+          <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <CustomInput
-                labelText="Designation"
-                id="designation"
+                labelText="Documentary Requirements"
+                id="documentaryrequirements"
                 formControlProps={{
                   fullWidth: true,
                 }}
