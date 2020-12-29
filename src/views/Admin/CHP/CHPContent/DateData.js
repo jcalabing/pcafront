@@ -9,7 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
 import Popup from "components/Popup";
-import CoirBox from "lightbox/CoirBox";
+import OtherProductBox from "lightbox/OtherProductBox";
 
 const useStyles = makeStyles({
   root: {
@@ -19,10 +19,9 @@ const useStyles = makeStyles({
     color: "#13A446",
   },
 });
-
 const StyledTableRow = withStyles((theme) => ({
   root: {
-    "&:nth-of-type(even)": {
+    "&:nth-of-type(odd)": {
       backgroundColor: theme.palette.action.hover,
     },
   },
@@ -33,12 +32,9 @@ function createData(date) {
 }
 
 const rows = [
-  createData("12/09/2020"),
-  createData("12/02/2020"),
-  createData("11/25/2020"),
-  createData("11/18/2020"),
-  createData("11/11/2020"),
-  createData("11/04/2020"),
+  createData("12/23/2020"),
+  createData("12/16/2020"),
+  createData("12/9/2020"),
 ];
 
 export default function DateData() {
@@ -50,9 +46,9 @@ export default function DateData() {
       <TableContainer component={Paper} className={classes.root}>
         <Table size="small" aria-label="a dense table">
           <TableHead>
-            <StyledTableRow>
+            <TableRow>
               <TableCell className={classes.header}>Date</TableCell>
-            </StyledTableRow>
+            </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row) => (
@@ -71,13 +67,13 @@ export default function DateData() {
         </Table>
       </TableContainer>
       <Popup
-        title="Coconut Coir Processing Data"
+        title="Other Food & Non-Food Coconut Processing"
         openPopup={openPopBox}
         setOpenPopup={setopenPopBox}
         fullWidth="true"
         maxWidth="xl"
       >
-        <CoirBox></CoirBox>
+        <OtherProductBox></OtherProductBox>
       </Popup>
     </>
   );

@@ -9,7 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
 import Popup from "components/Popup";
-import CoirBox from "lightbox/CoirBox";
+import VCOBox from "lightbox/VCOBox";
 
 const useStyles = makeStyles({
   root: {
@@ -19,7 +19,6 @@ const useStyles = makeStyles({
     color: "#13A446",
   },
 });
-
 const StyledTableRow = withStyles((theme) => ({
   root: {
     "&:nth-of-type(even)": {
@@ -33,12 +32,9 @@ function createData(date) {
 }
 
 const rows = [
-  createData("12/09/2020"),
-  createData("12/02/2020"),
-  createData("11/25/2020"),
-  createData("11/18/2020"),
-  createData("11/11/2020"),
-  createData("11/04/2020"),
+  createData("12/23/2020"),
+  createData("12/16/2020"),
+  createData("12/9/2020"),
 ];
 
 export default function DateData() {
@@ -71,13 +67,13 @@ export default function DateData() {
         </Table>
       </TableContainer>
       <Popup
-        title="Coconut Coir Processing Data"
+        title="Virgin Coconut Oil Processing"
         openPopup={openPopBox}
         setOpenPopup={setopenPopBox}
         fullWidth="true"
         maxWidth="xl"
       >
-        <CoirBox></CoirBox>
+        <VCOBox></VCOBox>
       </Popup>
     </>
   );

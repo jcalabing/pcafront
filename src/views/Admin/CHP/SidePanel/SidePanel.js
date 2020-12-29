@@ -1,7 +1,6 @@
 import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { DataGrid } from "@material-ui/data-grid";
 
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
@@ -14,15 +13,6 @@ import GridContainer from "components/Grid/GridContainer.js";
 
 import Button from "components/CustomButtons/Button.js";
 
-const columns = [{ field: "project", headerName: "Project", width: 150 }];
-
-const rows = [
-  { id: 1, project: "Aklan" },
-  { id: 2, project: "Antique" },
-  { id: 3, project: "Guimaras" },
-  { id: 4, project: "Iloilo" },
-  { id: 5, project: "Negros Occidental" },
-];
 const styles = {
   cardCategoryWhite: {
     "&,& a,& a:hover,& a:focus": {
@@ -63,9 +53,9 @@ export default function SidePanel() {
   return (
     <Card>
       <CardHeader color="primary">
-        <h4 className={classes.cardTitleWhite}>KAANIB</h4>
+        <h4 className={classes.cardTitleWhite}>Coco Hub Project</h4>
         <p className={classes.cardCategoryWhite}>
-          Enterprise Development Project
+          Capiz Small Coconut Farmers Marketing Cooperative (CASCOFAMCO)
         </p>
       </CardHeader>
       <CardBody>
@@ -75,18 +65,6 @@ export default function SidePanel() {
           </GridItem>
           <GridItem xs={6} lg={12}>
             <DatePicker label="To" />
-          </GridItem>
-          <GridItem xs={12}>
-            <br />
-            <div style={{ height: 320, width: "100%" }}>
-              <DataGrid
-                rows={rows}
-                columns={columns}
-                checkboxSelection
-                autoPageSize="true"
-                hideFooter="true"
-              />
-            </div>
           </GridItem>
           <GridItem xs={12}>
             <Button color="info" className={classes.submit}>

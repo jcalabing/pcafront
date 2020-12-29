@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     marginBottom: 10,
   },
   grandTotal: {
-    backgroundColor: "#9c27b0",
+    backgroundColor: "#fffeb5",
     padding: 10,
     paddingRight: 25,
     paddingLeft: 25,
@@ -52,9 +52,6 @@ const useStyles = makeStyles({
     width: "100%",
     display: "flex",
   },
-  whiteColor: {
-    color: "#fff",
-  },
 });
 
 function createProductData(id, name, volume, quantitySales, income) {
@@ -72,53 +69,41 @@ function createMachineData(id, machinery, dateReceived) {
   };
 }
 
-const productData = [
-  createProductData(1, "Coco coir", 159, 6.0, 24, 4.0),
-  createProductData(2, "Coco peat", 237, 9.0, 37, 4.3),
-  createProductData(3, "Cocopole", 262, 16.0, 24, 6.0),
-  createProductData(4, "Cocolog Small", 305, 3.7, 67, 4.3),
-  createProductData(5, "Cocolog Medium", 356, 16.0, 49, 3.9),
-  createProductData(6, "Cocolog Large", 159, 6.0, 24, 4.0),
-  createProductData(7, "Coco Pole (1ft)", 237, 9.0, 37, 4.3),
-  createProductData(8, "Coco Pole (2ft)", 262, 16.0, 24, 6.0),
-  createProductData(9, "Coco Pole (3ft)", 305, 3.7, 67, 4.3),
-  createProductData(10, "Twine", 356, 16.0, 49, 3.9),
-  createProductData(11, "Hanks", 356, 16.0, 49, 3.9),
-  createProductData(12, "Net", 356, 16.0, 49, 3.9),
-  createProductData(13, "Geonet", 356, 16.0, 49, 3.9),
-];
-const nonOperationalData = [
-  createNonOperationalData(1, "Coco coir", 159, 6.0, 24, 4.0),
-  createNonOperationalData(2, "Coco peat", 237, 9.0, 37, 4.3),
-  createNonOperationalData(3, "Cocopole", 262, 16.0, 24, 6.0),
-  createNonOperationalData(4, "Cocolog Small", 305, 3.7, 67, 4.3),
-  createNonOperationalData(5, "Cocolog Medium", 356, 16.0, 49, 3.9),
-  createNonOperationalData(6, "Cocolog Large", 159, 6.0, 24, 4.0),
-  createNonOperationalData(7, "Coco Pole (1ft)", 237, 9.0, 37, 4.3),
-  createNonOperationalData(8, "Coco Pole (2ft)", 262, 16.0, 24, 6.0),
-  createNonOperationalData(9, "Coco Pole (3ft)", 305, 3.7, 67, 4.3),
-  createNonOperationalData(10, "Twine", 356, 16.0, 49, 3.9),
-  createNonOperationalData(11, "Hanks", 356, 16.0, 49, 3.9),
-  createNonOperationalData(12, "Net", 356, 16.0, 49, 3.9),
-  createNonOperationalData(13, "Geonet", 356, 16.0, 49, 3.9),
-];
+const productData = [createProductData(1, "Coco Sugar", 10, 10, 6000)];
+const nonOperationalData = [createNonOperationalData(1, "Coco Sugar")];
 const machineData = [
-  createMachineData(1, "Wheel Barrow (100 kg-up cap.)", "6/20/2018"),
-  createMachineData(2, "Shovel", "6/20/2018"),
-  createMachineData(3, "Weighing Scale (platform)", "6/20/2018"),
-  createMachineData(4, "Wheel Barrow (100 kg-up cap.)", "6/20/2018"),
-  createMachineData(5, "Shovel", "9/19/2017"),
-  createMachineData(6, "Weighing Scale (platform)", "9/19/2017"),
-  createMachineData(7, "Sieving Machine (5.5 HP gasoline engine)", "9/19/2017"),
+  createMachineData(1, "Pugon(Brick)", "6/20/2018"),
+  createMachineData(2, "Cooking Vat (36)", "6/20/2018"),
+  createMachineData(3, "Stainless Stock Pot", "6/20/2018"),
+  createMachineData(4, "Weighing Scale (5kg cap.)", "6/20/2018"),
+  createMachineData(5, "Stainless Basin (24)", "9/19/2018"),
+  createMachineData(6, "Stainless Steel Pan/Wok", "9/19/2018"),
   createMachineData(
-    8,
-    "Twiner (3 spoolers, 1.3x1.5x0.5m dimension)",
-    "9/19/2017"
+    7,
+    "LPG Stove (Set) single burner + regulator",
+    "9/19/2018"
   ),
-  createMachineData(9, "Weaving loom (4x1.7x1.3m dimension)", "9/19/2017"),
+  createMachineData(8, "Impulse Sealer", "9/19/2018"),
+  createMachineData(9, "Cooking Vat (36)", "9/19/2017"),
+  createMachineData(10, "Stainless Stock Pot", "9/19/2017"),
+  createMachineData(11, "Weighing Scale (5kg cap.)", "9/19/2017"),
+  createMachineData(12, "Storage Box (20 L cap.)", "9/19/2017"),
+  createMachineData(13, "Stainless Basin (24)", "9/19/2017"),
+  createMachineData(14, "Stainless Steel Pan/Wok", "9/19/2017"),
+  createMachineData(15, "Stainless Tray", "9/19/2017"),
+  createMachineData(16, "Impulse Sealer", "9/19/2017"),
+  createMachineData(17, "LPG Stove (Set)", "9/19/2017"),
+  createMachineData(18, "Fermenting Jars (20 L cap.)", "9/19/2017"),
+  createMachineData(19, "Collecting Jars (20 L cap.)", "9/19/2017"),
+  createMachineData(20, "Plastic Crate", "9/19/2017"),
+  createMachineData(21, "Stainless Basin", "9/19/2017"),
+  createMachineData(22, "Hot Air Sealer", "9/19/2017"),
+  createMachineData(23, "Stainless Grater", "9/19/2017"),
+  createMachineData(24, "Hydraulic Presser/Expeller", "9/19/2017"),
+  createMachineData(25, "Dehusker", "9/19/2017"),
 ];
 
-export default function CoirBox() {
+export default function CocoSugarBox() {
   const classes = useStyles();
 
   return (
@@ -129,15 +114,11 @@ export default function CoirBox() {
             <Typography
               variant="title"
               noWrap
-              className={`${classes.tableheadstyle} ${classes.whiteColor}`}
+              className={classes.tableheadstyle}
             >
               Region:
             </Typography>
-            <Typography
-              variant="subheading"
-              className={classes.whiteColor}
-              noWrap
-            >
+            <Typography variant="subheading" noWrap>
               VI
             </Typography>
           </GridItem>
@@ -145,27 +126,21 @@ export default function CoirBox() {
             <Typography
               variant="title"
               noWrap
-              className={`${classes.tableheadstyle} ${classes.whiteColor}`}
+              className={classes.tableheadstyle}
             >
               Total CBO:
             </Typography>
-            <Typography variant="subheading" className={classes.whiteColor}>
-              12
-            </Typography>
+            <Typography variant="subheading">12</Typography>
           </GridItem>
           <GridItem xs={12} sm={6} md={3}>
             <Typography
               variant="title"
               noWrap
-              className={`${classes.tableheadstyle} ${classes.whiteColor}`}
+              className={classes.tableheadstyle}
             >
               Sites Operational:
             </Typography>
-            <Typography
-              variant="subheading"
-              className={classes.whiteColor}
-              noWrap
-            >
+            <Typography variant="subheading" noWrap>
               14
             </Typography>
           </GridItem>
@@ -173,15 +148,11 @@ export default function CoirBox() {
             <Typography
               variant="title"
               noWrap
-              className={`${classes.tableheadstyle} ${classes.whiteColor}`}
+              className={classes.tableheadstyle}
             >
               Sites Non-Operational:
             </Typography>
-            <Typography
-              variant="subheading"
-              className={classes.whiteColor}
-              noWrap
-            >
+            <Typography variant="subheading" noWrap>
               14
             </Typography>
           </GridItem>
@@ -200,7 +171,7 @@ export default function CoirBox() {
                 noWrap
                 className={classes.tableheadstyle}
               >
-                Province:
+                Province
               </Typography>
               <Typography variant="subheading" noWrap>
                 Aklan
@@ -314,9 +285,9 @@ export default function CoirBox() {
                               scope="row"
                               className={classes.tableheadstyle}
                             >
-                              Capacity Husks Per Day
+                              Capacity
                             </TableCell>
-                            <TableCell>3000 husks/day</TableCell>
+                            <TableCell>50 Liters/day</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -347,6 +318,26 @@ export default function CoirBox() {
                               Status
                             </TableCell>
                             <TableCell>Operational</TableCell>
+                          </TableRow>
+                          <TableRow>
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              className={classes.tableheadstyle}
+                            >
+                              Target Market based on the RMA results
+                            </TableCell>
+                            <TableCell>Local</TableCell>
+                          </TableRow>
+                          <TableRow>
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              className={classes.tableheadstyle}
+                            >
+                              Actual Target
+                            </TableCell>
+                            <TableCell>Local</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -469,7 +460,7 @@ export default function CoirBox() {
                             >
                               Municipality/ Barangay
                             </TableCell>
-                            <TableCell>Malay/Napaan</TableCell>
+                            <TableCell>Tangalan/ Panayakan</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -479,9 +470,7 @@ export default function CoirBox() {
                             >
                               Name of CBO
                             </TableCell>
-                            <TableCell>
-                              Kalipunan ng Maliliit na Nagniniyog
-                            </TableCell>
+                            <TableCell>Panayakan SCFO</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -491,7 +480,7 @@ export default function CoirBox() {
                             >
                               CBO Leader
                             </TableCell>
-                            <TableCell>Sally Colesio</TableCell>
+                            <TableCell>Monica Española</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -501,7 +490,7 @@ export default function CoirBox() {
                             >
                               Contact Number
                             </TableCell>
-                            <TableCell>09284497017</TableCell>
+                            <TableCell>09089223076</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -520,9 +509,9 @@ export default function CoirBox() {
                               scope="row"
                               className={classes.tableheadstyle}
                             >
-                              Capacity Husks Per Day
+                              Capacity
                             </TableCell>
-                            <TableCell>3000 husks/day</TableCell>
+                            <TableCell>50 Liters/day</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -560,12 +549,29 @@ export default function CoirBox() {
                               scope="row"
                               className={classes.tableheadstyle}
                             >
+                              Target Market based on the RMA results
+                            </TableCell>
+                            <TableCell>Local</TableCell>
+                          </TableRow>
+                          <TableRow>
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              className={classes.tableheadstyle}
+                            >
+                              Actual Target
+                            </TableCell>
+                            <TableCell>Local</TableCell>
+                          </TableRow>
+                          <TableRow>
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              className={classes.tableheadstyle}
+                            >
                               Remarks
                             </TableCell>
-                            <TableCell>
-                              Decorticating machine transferred to CASCOFAMCO,
-                              Ivisan, Capiz
-                            </TableCell>
+                            <TableCell></TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -575,9 +581,7 @@ export default function CoirBox() {
                             >
                               Reason for non-operational
                             </TableCell>
-                            <TableCell>
-                              Manpower and Market constraints
-                            </TableCell>
+                            <TableCell>lack of tuba gatherer</TableCell>
                           </TableRow>
                           <TableRow>
                             <TableCell
@@ -587,7 +591,9 @@ export default function CoirBox() {
                             >
                               Corrective Measures/ Action Plan
                             </TableCell>
-                            <TableCell>for transfer</TableCell>
+                            <TableCell>
+                              conduct training for coco sap collection
+                            </TableCell>
                           </TableRow>
                         </TableBody>
                       </Table>

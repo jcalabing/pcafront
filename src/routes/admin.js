@@ -2,17 +2,12 @@ import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
 import TerrainIcon from "@material-ui/icons/Terrain";
 import AssessmentIcon from "@material-ui/icons/Assessment";
-import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
-import TextsmsIcon from "@material-ui/icons/Textsms";
 import AssignmentIcon from "@material-ui/icons/Assignment";
-// import Unarchive from "@material-ui/icons/Unarchive";
-// core components/views for Admin layout
 import DashboardPage from "views/Admin/Dashboard";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import Icons from "views/Icons/Icons.js";
 import Province from "views/Admin/Province";
-// import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
-import Entries from "views/Admin/Entries";
+import CHP from "views/Admin/CHP";
 import Kaanib from "views/Admin/Kaanib";
 
 // core components/views for RTL layout
@@ -49,10 +44,10 @@ const dashboardRoutes = [
     collapse: true,
   },
   {
-    path: "/entries",
+    path: "/CHP",
     name: "CHP",
     icon: "content_paste",
-    component: Entries,
+    component: CHP,
     layout: "/admin",
   },
   {
